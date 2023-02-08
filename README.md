@@ -2,7 +2,7 @@
 Testing whether LM35 temperature sensors can be powered using 3.3 V.
 
 LM35 is a low-cost analog temperature sensor which, according to the specification sheet, works with a supply voltage between 4 and 30 V. Many microcontroller boards (such as an ESP32) have a 3.3 V output so it would be advantageous to be able to use LM35 with this supply voltage. 
-The YouTube video demonstrates that the LM35 can work with supply voltage of 3.3 V from an ESP32. It also shows that the sensor does not work at voltages less than ~ 3.1 V and but stable at higher supply voltages. 
+The [YouTube video](https://youtu.be/ar3s9zYWvNs) demonstrates that the LM35 can work with supply voltage of 3.3 V from an ESP32. It also shows that the sensor does not work at voltages less than ~ 3.1 V and but stable at higher supply voltages. 
 
 To test the different LM35 supply voltages with the ESP32, six sensors were read via an ADS1115 ADC. This improved the resolution of the temperature readings when compared to the ADC embedded in the microcontroller. 3.3 V was delivered to the LM35 from the ESP32 3.3 power pin.  The 5 V supply was obtained from the EN pin (so was really 5 V used to power the ESP32 from the computer).
 
