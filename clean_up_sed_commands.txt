@@ -1,0 +1,14 @@
+cd /Users/damianwilliams/Desktop/lm35_data/   
+(base) damianwilliams@Damians-MacBook-Pro lm35_data % gsed -i'.BAK' 's/\]\[/\n/gI' lm35_saved_data_1.txt  
+
+gsed -i'.BAK' 's/'\''/X/'g lm35_saved_data_1.txt 
+
+gsed -i'.BAK' 's/X1/\{\Time\: \[/'g lm35_saved_data_1.txt 
+ gsed -i'.BAK' 's/Time\:/Time\"\:/'g lm35_saved_data_1.txt
+ gsed -i'.BAK' 's/X//'g lm35_saved_data_1.txt
+ gsed -i'.BAK' 's/\"Time /\{\"Time/'g lm35_saved_data_1.txt
+ gsed -i'.BAK' 's/"Time"/{"Time"/'g lm35_saved_data_1.txt   
+
+
+	
+
